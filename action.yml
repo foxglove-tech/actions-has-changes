@@ -17,7 +17,7 @@ outputs:
     description: "Whether or not there are uncommitted changes in the pathspec"
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "docker://epsyhealth/action-has-changes:latest"
   args: 
     - ${{ inputs.status-args }}
     - ${{ inputs.pathspec }}
